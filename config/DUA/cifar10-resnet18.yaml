@@ -1,0 +1,16 @@
+dataset: cifar10
+num_classes: 10
+img_mean: [0.4914672374725342, 0.4822617471218109, 0.4467701315879822]  # cifar10_mean
+img_std: [0.24703224003314972, 0.24348513782024384, 0.26158785820007324] # cifar10_std
+resize: 32 # for augmentation especially for ImageNet Dataset
+training_transform: null
+mark_budget: 0.1
+wm_path: data/ML_data_auditing/cifar10/
+optimizer: sgd,lr=1.0
+epochs: 90
+radius: 10
+lambda_ft_l2: 0.01
+lambda_l2_img: 0.0005
+p: 0.05
+K: 16
+augment: False # additional augmentation for training

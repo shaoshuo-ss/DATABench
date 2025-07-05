@@ -1,0 +1,17 @@
+test_path: data/cifar10-imagefolder/test
+num_classes: 10
+batch_size: 128
+lr: 0.03
+momentum: 0.9
+wd: 0.001
+epochs: 90
+resize: 32
+distance: l2
+dataset: cifar10
+feature_type: rand # rand or mingd
+alpha_l_1: 1.0
+alpha_l_2: 0.01
+alpha_l_inf: 0.001
+k: 100
+num_iter: 500
+gap: 0.001

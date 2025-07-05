@@ -1,0 +1,15 @@
+waveletfilter:
+  level: 2
+  threshold: 0.1
+dpsgd:
+  max_grad_norm: 1.2
+  target_epsilon: 32
+  target_delta: 0.001
+  batch_size: 400
+  grad_accumulation: 1
+  epochs: 150
+  lr: 0.1
+  wd: 0.0
+rs:
+  noise_std: 0.05
+  num_samples: 30

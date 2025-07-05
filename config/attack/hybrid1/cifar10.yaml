@@ -1,0 +1,16 @@
+autoencoder:
+  autoencoder_path: "model/autoencoder/cifar10_autoencoder.pth"
+  epochs: 150
+  batch_size: 32
+  lr: 0.005
+  retrain: false
+advtraining:
+  epsilon: 0.0627
+  alpha: 0.02
+  steps: 5
+  mode: "hybrid" # 'fgsm' or "hybrid"
+reprogramming:
+  epochs: 10
+  batch_size: 150
+  lr: 0.01
+  shuffle_output: false

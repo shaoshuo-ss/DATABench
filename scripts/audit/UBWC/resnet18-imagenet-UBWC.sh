@@ -1,0 +1,20 @@
+python audit_main.py \
+    --gpus "6" \
+    --epochs 150 \
+    --lr 0.01 \
+    --momentum 0.9 \
+    --optim "sgd" \
+    --bs 32 \
+    --wd 1e-3 \
+    --eval_rounds 5 \
+    --test_bs 512 \
+    --model "ResNet18" \
+    --dataset "imagenet100" \
+    --image_size 224 \
+    --seed 666 \
+    --save_dir "./results/" \
+    --save_model \
+    --mode "train" \
+    --audit_method "UBWC" \
+    --audit_config_path "config/UBWC/imagenet100-resnet18.yaml" \
+    --reprocessing

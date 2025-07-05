@@ -1,0 +1,44 @@
+audit_method: "Zmark"
+attack_list: ["uap"]
+target_label: 1
+reverse: False
+original_label: 3
+num_sample: 100
+resize: 32
+larger_num: 10
+constraint: l2
+num_iterations: 100
+gamma: 1.0
+stepsize_search: geometric_progression
+max_num_evals: 10000
+init_num_evals: 100
+clip_max: 1.0
+clip_min: 0.0
+trigger_size: 4
+fgsm:
+  epsilon: 0.03
+uap:
+  epsilon: 0.05
+  alpha: 0.004
+  max_iter: 20
+pgd:
+  epsilon: 0.05
+  alpha: 0.004
+  iters: 20
+tifgsm:
+  epsilon: 0.05
+  alpha: 0.004
+  steps: 20
+vnifgsm:
+  epsilon: 0.05
+  alpha: 0.004
+  steps: 20
+black-box:
+  model: MobileNetV2
+  epochs: 90
+  batch_size: 16
+  lr: 0.01
+  alpha: 0.5
+  temperature: 8.0
+  pre-trained-path: "model/distillation/MobileNetV2.pth"
+  retrain: false

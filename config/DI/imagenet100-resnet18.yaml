@@ -1,0 +1,17 @@
+test_path: data/benign_100/val
+num_classes: 100
+batch_size: 512
+lr: 0.03
+momentum: 0.9
+wd: 0.01
+epochs: 120
+resize: 224
+distance: l2
+dataset: imagenet100
+feature_type: rand # rand or mingd
+alpha_l_1: 1.0
+alpha_l_2: 0.01
+alpha_l_inf: 0.001
+k: 100
+num_iter: 500
+gap: 0.001

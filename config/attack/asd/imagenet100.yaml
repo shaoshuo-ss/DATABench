@@ -1,0 +1,55 @@
+seed:
+  seed: 100
+  deterministic: False
+  benchmark: True
+num_classes: 100
+saved_dir: ./saved_data
+storage_dir: ./storage
+prefetch: True  # turn on prefetch mode will speedup io
+loader:
+  batch_size: 128
+  num_workers: 4
+  pin_memory: True
+
+split:
+  criterion:
+    sce:
+      alpha: 0.1
+      beta: 1
+      num_classes: 100
+semi:
+  batch_size: 64
+  criterion:
+    mixmatch:
+      lambda_u: 15  
+      rampup_length: 120  # same as num_epochs
+  mixmatch:
+    train_iteration: 1024
+    temperature: 0.5
+    alpha: 0.75
+    num_classes: 100
+
+sync_bn: True  # synchronized batch normalization
+
+optimizer:
+  Adam:
+    lr: 0.002
+lr_scheduler: null
+num_epochs: 120
+
+criterion:
+  cross_entropy:
+    reduction: "mean"
+
+global:
+  epoch_first: 30
+  epoch_second: 60
+  epoch_third: 90
+  seed_num: 10
+  epsilon: 0.5
+  t: 5
+  n: 10
+
+meta:
+  lr: 0.015
+  epoch: 1

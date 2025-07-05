@@ -1,0 +1,7 @@
+max_grad_norm: 1.2
+target_epsilon: 64
+target_delta: 0.001
+batch_size: 128
+epochs: 150
+lr: 0.03
+wd: 0.0

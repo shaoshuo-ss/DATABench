@@ -1,0 +1,8 @@
+waveletfilter:
+  level: 2
+  threshold: 0.1
+reprogramming:
+  epochs: 10
+  batch_size: 150
+  lr: 0.01
+  shuffle_output: false

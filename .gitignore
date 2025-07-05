@@ -1,0 +1,14 @@
+/result
+/data
+/results
+*.jpg
+*.out
+*.log
+/test.py
+/olddata
+/model
+/final
+/pic
+*.pt
+/log
+/domain_data

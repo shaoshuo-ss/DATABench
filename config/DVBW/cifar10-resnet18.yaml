@@ -1,0 +1,3 @@
+wm_data_path: data/DVBW/cifar10/
+poisoned_rate: 0.1
+margin: 0.2

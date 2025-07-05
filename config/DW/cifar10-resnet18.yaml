@@ -1,0 +1,19 @@
+retrain_max_epoch: 150
+backdoor_poisoning: True
+retrain_from_init: True
+val_max_epoch: 150
+epochs: 150
+sources_train: 1000
+defend_features_only: True
+disable_adaptive_attack: True
+# vnet: 'ResNet34'
+net: 'ResNet18'
+threatmodel: random-subset
+poison_path: data/DW/cifar10/     # the path save poison dataset
+budget: 0.1
+save: full
+coe: 0.3
+dataset: CIFAR10
+attackiter: 250
+data_path: ./data/cifar10
+sources: 1000

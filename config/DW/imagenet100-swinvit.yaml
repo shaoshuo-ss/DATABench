@@ -1,0 +1,22 @@
+retrain_max_epoch: 150
+backdoor_poisoning: True
+retrain_from_init: True
+val_max_epoch: 150
+epochs: 150
+sources_train: 500
+defend_features_only: True
+disable_adaptive_attack: True
+# vnet: 'ResNet34'
+net: 'ResNet18'
+threatmodel: random-subset
+poison_path: data/DW/imagenet100/     # the path save poison dataset
+budget: 0.1
+save: full
+coe: 0.3
+dataset: imagenet100
+attackiter: 250
+data_path: ./data/benign_100
+sources: 50
+source_gradient_batch: 64
+batch_size: 64
+pbatch: 64

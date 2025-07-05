@@ -1,0 +1,4 @@
+epsilon: 0.0627
+alpha: 0.02
+steps: 5
+mode: "fgsm" # 'fgsm' or "hybrid"

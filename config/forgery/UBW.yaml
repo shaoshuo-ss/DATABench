@@ -1,0 +1,31 @@
+audit_method: "UBW"
+attack_list: ["fgsm", "pgd", "uap", "tifgsm", "vnifgsm"]
+target_label: null
+reverse: False
+fgsm:
+  epsilon: 0.03
+uap:
+  epsilon: 0.05
+  alpha: 0.004
+  max_iter: 20
+pgd:
+  epsilon: 0.05
+  alpha: 0.004
+  iters: 20
+tifgsm:
+  epsilon: 0.05
+  alpha: 0.004
+  steps: 20
+vnifgsm:
+  epsilon: 0.05
+  alpha: 0.004
+  steps: 20
+black-box:
+  model: MobileNetV2
+  epochs: 90
+  batch_size: 16
+  lr: 0.01
+  alpha: 0.5
+  temperature: 8.0
+  pre-trained-path: "model/distillation/MobileNetV2.pth"
+  retrain: false

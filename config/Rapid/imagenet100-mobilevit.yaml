@@ -1,0 +1,14 @@
+valid_path: ./data/benign_100/val
+resize: 224
+seed: 666
+lr: 0.03
+momentum: 0.9
+wd: 0.01
+epochs: 120
+model_num: 4
+batch_size: 128
+query_num: 8
+num_cls: 100
+attack_epochs: 100
+dataset_name: imagenet100
+model_name: mobilevit

@@ -1,0 +1,22 @@
+Valid_path: ./data/cifar10-imagefolder/test  # Ensure the validation dataset is consistent with training dataset
+dataset: cifar10
+mark_budget: 0.1
+trigger_size: 4
+wm_path: ./data/Zmark/cifar10/
+alpha: 0.2
+larger_num: 10
+img_mean: [0.4914672374725342, 0.4822617471218109, 0.4467701315879822]  # cifar10_mean
+img_std: [0.24703224003314972, 0.24348513782024384, 0.26158785820007324] # cifar10_std
+resize: 32 # especially for imagenet
+num_classes: 10
+num_sample: 200
+original_label: 2
+target_label: 0
+constraint: l2
+num_iterations: 100
+gamma: 1.0
+stepsize_search: geometric_progression
+max_num_evals: 10000
+init_num_evals: 100
+tau: 0.02 # The cotefficient is used to run T_test
+wsr: True # Whether to test watermark success rate

@@ -1,0 +1,18 @@
+#seed
+seed: 666
+# data
+dataset: imagenet100
+data_path: ./data/benign_100/
+resize: 224
+batch_size: 512
+num_classes: 100
+epochs: 120
+# model related
+learning_rate: 0.03
+momentum: 0.9
+wd: 0.01
+step_size: 30
+gamma: 0.1
+number_shadow_model: 10
+reg_lambd: 10 #10
+n_estimators: 500 #10000

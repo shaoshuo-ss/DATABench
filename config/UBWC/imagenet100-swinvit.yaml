@@ -1,0 +1,8 @@
+wm_data_path: data/UBWC/imagenet100/
+poisoned_rate: 0.1
+source_class: [0]
+target_class: 1
+poison_num: 3500
+craft_iters: 200
+retrain_iters: 50
+train_epochs: 40

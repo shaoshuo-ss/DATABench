@@ -1,0 +1,5 @@
+autoencoder_path: "model/autoencoder/imagenet100_autoencoder.pth"
+epochs: 150
+batch_size: 64
+lr: 0.005
+retrain: false

@@ -1,0 +1,16 @@
+dataset: imagenet100
+num_classes: 100
+img_mean: [0.485, 0.456, 0.406]  # imagenet_mean
+img_std: [0.229, 0.224, 0.225] # imagenet_std
+resize: 224 # for augmentation especially for ImageNet Dataset
+training_transform: null
+mark_budget: 0.1
+wm_path: data/ML_data_auditing/imagenet100/
+optimizer: sgd,lr=1.0
+epochs: 90
+radius: 10
+lambda_ft_l2: 0.01
+lambda_l2_img: 0.0005
+p: 0.05
+K: 16
+augment: False # additional augmentation for training

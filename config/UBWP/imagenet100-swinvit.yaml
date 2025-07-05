@@ -1,0 +1,4 @@
+wm_data_path: data/UBWP/imagenet100/
+poisoned_rate: 0.1
+margin: 0.2
+alpha: 0.3

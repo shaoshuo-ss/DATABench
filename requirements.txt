@@ -1,0 +1,11 @@
+pytorch
+opencv-python
+timm
+einops
+scipy
+diffusers
+opacus
+scikit-learn
+pywavelets
+higher
+matplotlib

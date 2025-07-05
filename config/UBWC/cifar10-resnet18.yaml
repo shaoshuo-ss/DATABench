@@ -1,0 +1,12 @@
+wm_data_path: data/UBWC/cifar10/
+poisoned_rate: 0.1
+source_class: [0]
+target_class: 1
+patch_size: 8
+poison_num: 3500
+# please note that the craft_iters should be set to an integer multiple of the retrain_iters
+craft_iters: 200
+retrain_iters: 50
+train_epochs: 40
+# eps: 0.062745   # 16.0 / 255.0
+
