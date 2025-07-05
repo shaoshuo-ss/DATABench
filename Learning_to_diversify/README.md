@@ -30,10 +30,12 @@ You can simply uncomment it to start your own experiment. It may require hyper-p
 ---
 
 # 🔄 Later Addition (Updated Content)
+
 ## For DatasetAuditing
+**Important Note Regarding Domain Watermark (DW) Implementation**:  
+The original code for Domain Watermark from the paper ["Domain Watermark: Effective and Harmless Dataset Copyright Protection Is Closed at Hand" (NeurIPS 2023)](https://arxiv.org/abs/2305.16192) was not publicly released. This code implementation example was developed based on common technical elements between the two papers, following guidance from the original authors. Please note that this serves as a reference implementation and details may differ from the original paper. For any questions regarding the DW method itself, please contact the original authors.
+
 1. Install the required packages.
 2. Download imagenet100 dataset.
 3. Execute the following code.
-```
 bash wm.sh
-```
