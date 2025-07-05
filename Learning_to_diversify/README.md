@@ -38,4 +38,6 @@ The original code for Domain Watermark from the paper ["Domain Watermark: Effect
 1. Install the required packages.
 2. Download imagenet100 dataset.
 3. Execute the following code.
+```
 bash wm.sh
+```
