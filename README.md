@@ -69,10 +69,10 @@ DATABench/
 If you use DATABench in your research, please cite our paper:
 
 ```bibtex
-@article{databench2024,
+@article{shao2025databench,
   title={DATABench: Evaluating Dataset Auditing in Deep Learning from an Adversarial Perspective},
   author={Shao, Shuo and Li, Yiming and Zheng, Mengren and Hu, Zhiyang and Chen, Yukun and Li, Boheng and He, Yu and Guo, Junfeng and Zhang, Tianwei and Tao, Dacheng and Qin, Zhan},
-  journal={[Journal]},
+  journal={arxiv preprint arxiv:2507.05622},
   year={2025}
 }
 ```
