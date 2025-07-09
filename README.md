@@ -37,8 +37,8 @@ DATABench/
 
 ## Quick Start
 
-- **Guidebook about dataset auditing methods** in DATABench: please refer to [audit](audit/README.md).
-- **Guidebook about attacks** in DATABench: please refer to [attack](attack/README.md).
+- **Guidebook about dataset auditing methods** in DATABench: please refer to [`./audit/README.md`](audit/README.md).
+- **Guidebook about attacks** in DATABench: please refer to [`./attack/README.md`](attack/README.md).
 
 
 ### Environment Setup
