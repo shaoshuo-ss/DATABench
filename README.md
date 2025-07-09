@@ -39,9 +39,9 @@ bash scripts/audit/DVBW/resnet18-cifar10.sh ${gpus} ${attack} # for evasion atta
 bash scripts/forgery/forgery.sh ${gpus} ${audit_method} # for forgery attack
 ```
 
-About attacks in DATABench, please refer to [attack](attack/README.md).
+**Readme about attacks** in DATABench: please refer to [attack](attack/README.md).
 
-About dataset auditing methods in DATABench, please refer to [audit](audit/README.md).
+**Readme about dataset auditing methods** in DATABench: please refer to [audit](audit/README.md).
 
 ## Project Structure
 
