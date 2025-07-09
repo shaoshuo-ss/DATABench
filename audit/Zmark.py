@@ -11,7 +11,6 @@ from datetime import datetime
 from audit.utils import *
 import logging
 
-# device = 'cuda:0'
 
 def clip_image(image, clip_min, clip_max):
     return torch.clamp(image, clip_min, clip_max)
