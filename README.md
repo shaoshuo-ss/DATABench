@@ -1,6 +1,6 @@
 # DATABench
 
-This is the official code repository for the paper titled "DATABench: Evaluating Dataset Auditing in Deep Learning from an Adversarial Perspective". DATABench is a comprehensive benchmark for evaluating dataset auditing methods in deep learning from an adversarial perspective. It provides a unified framework with standardized interfaces for both dataset auditing algorithms and adversarial attacks, facilitating fair comparison and extensible research in this field.
+This is the official code repository for the paper titled "[DATABench: Evaluating Dataset Auditing in Deep Learning from an Adversarial Perspective](https://arxiv.org/abs/2507.05622)". DATABench is a comprehensive benchmark for evaluating dataset auditing methods in deep learning from an adversarial perspective. It provides a **unified framework** with **standardized interfaces** for both dataset auditing algorithms and potential attacks, facilitating fair comparison and extensible research in this field.
 
 ## Features
 - **Unified Evaluation Framework**: Standardized evaluation pipeline for dataset auditing methods under adversarial settings.
