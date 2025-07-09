@@ -10,6 +10,31 @@ This is the official code repository for the paper titled "[DATABench: Evaluatin
 - **Rich Attack Arsenal**: Multiple built-in attacks including filtering, differential privacy, adversarial training, and hybrid approaches.
 - **Multiple Auditing Methods**: Support for various auditing techniques including MIA, DVBW, DW, and more.
 
+
+
+## Project Structure
+
+```
+DATABench/
+├── audit/                  # Dataset auditing implementations
+│   ├── dataset_audit.py   # Base auditing interface
+│   ├── MIA.py            # Membership Inference Attack
+│   ├── DVBW.py           # Dataset Ownership Verification via Backdoor Watermarking
+│   └── ...               # Other auditing methods
+├── attack/                # Attack implementations
+│   ├── attack_interface.py # Base attack interfaces
+│   ├── attack.py         # Attack factory and configuration
+│   ├── preprocessing/    # Preprocessing attacks
+│   ├── training/         # Training-time attacks
+│   └── postprocessing/   # Postprocessing attacks
+├── config/               # Configuration files
+├── scripts/              # Evaluation scripts
+├── utils/                # Utility functions
+└── audit_main.py         # Main evaluation script
+```
+
+
+
 ## Quick Start
 
 ### Environment Setup
@@ -43,26 +68,6 @@ bash scripts/forgery/forgery.sh ${gpus} ${audit_method} # for forgery attack
 
 **Guidebook about attacks** in DATABench: please refer to [attack](attack/README.md).
 
-## Project Structure
-
-```
-DATABench/
-├── audit/                  # Dataset auditing implementations
-│   ├── dataset_audit.py   # Base auditing interface
-│   ├── MIA.py            # Membership Inference Attack
-│   ├── DVBW.py           # Dataset Ownership Verification via Backdoor Watermarking
-│   └── ...               # Other auditing methods
-├── attack/                # Attack implementations
-│   ├── attack_interface.py # Base attack interfaces
-│   ├── attack.py         # Attack factory and configuration
-│   ├── preprocessing/    # Preprocessing attacks
-│   ├── training/         # Training-time attacks
-│   └── postprocessing/   # Postprocessing attacks
-├── config/               # Configuration files
-├── scripts/              # Evaluation scripts
-├── utils/                # Utility functions
-└── audit_main.py         # Main evaluation script
-```
 
 ## Citation
 
