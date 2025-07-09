@@ -37,6 +37,10 @@ DATABench/
 
 ## Quick Start
 
+- **Guidebook about dataset auditing methods** in DATABench: please refer to [audit](audit/README.md).
+- **Guidebook about attacks** in DATABench: please refer to [attack](attack/README.md).
+
+
 ### Environment Setup
 
 First, prepare the environment:
@@ -63,10 +67,6 @@ Execute evaluations using the provided scripts. Config files are located in conf
 bash scripts/audit/DVBW/resnet18-cifar10.sh ${gpus} ${attack} # for evasion attack
 bash scripts/forgery/forgery.sh ${gpus} ${audit_method} # for forgery attack
 ```
-
-**Guidebook about dataset auditing methods** in DATABench: please refer to [audit](audit/README.md).
-
-**Guidebook about attacks** in DATABench: please refer to [attack](attack/README.md).
 
 
 ## Citation
